@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from '../Buttons/button/button.component';
+import { InputLabelComponent } from '../Inputs/input-label/input-label.component';
 
 
 
@@ -8,11 +9,13 @@ import { ButtonComponent } from '../Buttons/button/button.component';
   declarations: [
   ],
   exports: [
-    ButtonComponent
+    ButtonComponent,
+    InputLabelComponent
   ],
   imports: [
     CommonModule,
-    ButtonComponent
+    ButtonComponent,
+    InputLabelComponent
   ]
 })
 export class SharedComponentModule { }

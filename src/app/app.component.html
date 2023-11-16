@@ -7,7 +7,7 @@
     width: 100%;
   }
  
-   /* #circulo3{
+   #circulo3{
    height: 100%;
    width: 50%;
    background:#A6CDDE;
@@ -36,7 +36,7 @@
    position:absolute;
    left: -11%;
    top: -50px;
-  } */
+  }
 
   button{
     margin-left: 50%;
@@ -74,25 +74,69 @@
     z-index: 1000;
   }
 
-  #login{
+  #login {
     height: 100px;
     width: 100px;
-    background-color: black;
-    margin: 40px;
+    margin: 100px;
+    text-decoration-color: white;
+  }
+
+  app-input-label{
+
+    margin-bottom: 20px;
+    margin: 100px;
+    background-color: none;
+  }
+
+  #titlel{
+    text-align: right;
+    margin-bottom: 4%;
+    margin-top: 5%;
+    margin-left: 62%;
+    width: 25%;
+    font-size: 25px;
+  }
+
+  #recuperar{
+    cursor: pointer;
+    margin-left: 65%;
+    border-style: groove;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 22%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  #recuperar:active, #recuperar:hover{
+    text-decoration: rgb(99, 211, 219);
   }
 </style>
 
 <main class="main">
   <div class="Cloud">
- <!-- <section><img src="https://img.freepik.com/vector-gratis/servicio-reparacion-montaje-aire-acondicionado-reparador-que-instala-acondicionador-examen-reparacion-herramientas-equipos-especiales-ilustracion-vectorial-aislada_613284-50.jpg?w=740&t=st=1700091604~exp=1700092204~hmac=32b1946a0d14fa6b33a9641ce19831fd0907ece895ef00ac9d49c467b745890f" alt="" id="sectionimg"></section> -->
 
- <img src="./Img/conditionerAir.png" alt="" id="logoAire">
+    
+ <!-- <img src="./Img/conditionerAir.png" alt="" id="logoAire"> -->
     <div id="circulo1"></div>
     <div id="circulo2"></div>
     <div id="circulo3"></div>
 
+    <div id="titlel">
+      <p>Compra, venta & mantenimiento de aires acondicionados</p>
+    </div>
+
+    <!-- aqui vienen los inputs -->
+    <app-input-label LabelName="Correo electronico o télefono"></app-input-label>
+    <app-input-label LabelName="Contraseña"></app-input-label>
+
     <div id="LoginButton">
-      <app-button ButtonName="Iniciar sesion" id="login"></app-button>
+      <app-button type="button" ButtonName="Iniciar sesion" id="login"></app-button>
+      <div id="recuperar" href="#">
+        ¿Has olvidado tu contraseña?
+        <br><br>
+      </div>
       <app-button ButtonName="Crear cuenta nueva" id="newlogin"></app-button>
     </div>
 
