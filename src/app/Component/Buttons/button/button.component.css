@@ -17,7 +17,16 @@ h3{
     justify-content: center;
 }
 
-div:active{
+div:hover{
+    box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px #fff;
+    background-color: #05c765;
+    transition: all 500ms ease-in-out;
+}
 
-    transition: all 0.5 ease-in-out;
+div:active{
+    height: 40px;
+    width: 200px;
 }
