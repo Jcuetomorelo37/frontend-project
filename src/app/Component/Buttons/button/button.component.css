@@ -12,9 +12,12 @@ div{
 h3{
     color: white;
     align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 div:active{
-    background-color: rgb(47, 175, 175);
+
     transition: all 0.5 ease-in-out;
 }

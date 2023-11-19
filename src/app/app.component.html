@@ -1,5 +1,6 @@
 
 <style>
+
   .main{
     margin: 0;
     padding: 0;
@@ -7,13 +8,14 @@
     width: 100%;
   }
  
-   #circulo3{
+  #circulo3{
    height: 100%;
    width: 50%;
    background:#A6CDDE;
    border-radius:50%;
    position:absolute;
    left: -25%;
+   z-index: 0;
   }
 
   #circulo2{
@@ -25,6 +27,7 @@
    position: absolute;
    left: -18%;
    top: -20px;
+   z-index: 0;
   }
 
   #circulo1{
@@ -36,6 +39,7 @@
    position:absolute;
    left: -11%;
    top: -50px;
+   z-index: 0;
   }
 
   button{
@@ -46,18 +50,6 @@
     width: 20%;
     border-radius: 50px;
   }
-
-  /* p{
-    color: white;
-    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
-  } */
-
-  /* section{
-    margin-left: 40%;
-    height: 10%;
-    width: 20%;
-
-  } */
 
   #sectionimg {
     clip-path: inset(100px 0px 0px 0px);
@@ -79,6 +71,7 @@
     width: 100px;
     margin: 100px;
     text-decoration-color: white;
+    background-color: green;
   }
 
   app-input-label{
@@ -90,10 +83,10 @@
   #titlel{
     text-align: right;
     margin-bottom: 4%;
-    margin-top: 5%;
+    margin-top: 4%;
     margin-left: 62%;
-    width: 25%;
-    font-size: 25px;
+    width: 30%;
+    font-size: 35px;
   }
 
   #recuperar{
@@ -108,34 +101,57 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
+    text-decoration-color: green;
   }
 
   #recuperar:active, #recuperar:hover{
     text-decoration: rgb(99, 211, 219);
   }
+
+  .ilustration-login{
+    width: 600px;
+    position: absolute;
+    z-index: 1000;
+    top: 25%;
+    left: 5%;
+  }
+
+  .login-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .form-container {
+    width: fit-content;
+    position: absolute;
+    right: 15%;
+  }
+
 </style>
 
 <main class="main">
   <div class="Cloud">
 
-    
+    <div><img class="ilustration-login" src="../assets/Illustrations/air_conditioner8.png" alt=""></div>
  <!-- <img src="./Img/conditionerAir.png" alt="" id="logoAire"> -->
-    <div id="circulo1"></div>
-    <div id="circulo2"></div>
-    <div id="circulo3"></div>
-
-    <div id="titlel">
-      <p>Compra, venta & mantenimiento de aires acondicionados</p>
-    </div>
-
-    <!-- aqui vienen los inputs -->
-    <app-input-label LabelName="Correo electronico o télefono"></app-input-label>
-    <app-input-label LabelName="Contraseña"></app-input-label>
+   <div id="login-container">
+      <div id="circulo1"></div>
+      <div id="circulo2"></div>
+      <div id="circulo3"></div>
+      <div id="titlel">
+        <p>Compra, venta & mantenimiento de aires acondicionados</p>
+      </div>
+      <div id="form-container">
+        <app-input-label LabelName="Correo electronico o télefono"></app-input-label>
+        <app-input-label LabelName="Contraseña"></app-input-label>
+      </div>
+   </div>
 
     <div id="LoginButton">
       <app-button type="button" ButtonName="Iniciar sesion" id="login"></app-button>
       <div id="recuperar" href="#">
-        ¿Has olvidado tu contraseña?
+        <p id="forget">¿Has olvidado tu contraseña?</p>
         <br><br>
       </div>
       <app-button ButtonName="Crear cuenta nueva" id="newlogin"></app-button>

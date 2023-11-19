@@ -3,3 +3,28 @@
     margin: 0%;
     padding: 0%;
 }
+
+@font-face {
+    font-family: 'Maxwell';
+    src: url('./assets/fonts/MAXWELL_REGULAR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maxwell';
+    src: url('./assets/fonts/MAXWELL_LIGHT.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maxwell';
+    src: url('./assets/fonts/MAXWELL_BOLD.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Maxwell', sans-serif;
+}
