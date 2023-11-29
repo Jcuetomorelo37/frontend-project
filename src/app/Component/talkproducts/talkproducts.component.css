@@ -14,8 +14,15 @@
     margin-top: 1%;
     margin-bottom: 1%;
     border-radius: 60px;
+    cursor: pointer;
   }
-  
+
+  .svc:hover{
+    width: 310px;
+    background-color: #a5d1b448;
+    transition: all 500ms ease-in-out;
+  }
+
   #imgslogo {
     margin-top: 10%;
     height: 120px;
