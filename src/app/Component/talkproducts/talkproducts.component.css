@@ -78,7 +78,21 @@
       margin-bottom: 20px;
     }
   
+    #starandstates{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     #nuevon {
-      margin-bottom: 10px;
-      margin-top: 0px;
+      margin-bottom: 9px;
+      margin-left: 40px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    #valoraire{
+      color: #51C177;
+      font-size: 30px;
+      font-weight: bold;
     }
