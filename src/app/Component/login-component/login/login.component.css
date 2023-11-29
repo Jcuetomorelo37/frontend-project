@@ -1,0 +1,119 @@
+
+.main{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+ 
+  #circulo3{
+   height: 100%;
+   width: 50%;
+   background:#A6CDDE;
+   border-radius:50%;
+   position:absolute;
+   left: -25%;
+   z-index: 0;
+  }
+
+  #circulo2{
+   height: calc(100% + 50px);
+   width: 50%;
+   background:#c4dce7;
+   border-top-right-radius: 50%;
+   border-bottom-right-radius: 50%;
+   position: absolute;
+   left: -18%;
+   top: -20px;
+   z-index: 0;
+  }
+
+  #circulo1{
+   height: calc(100% + 100px);
+   width: 50%;
+   background:#E6F3F9;
+   border-top-right-radius: 50%;
+   border-bottom-right-radius: 50%;
+   position:absolute;
+   left: -11%;
+   top: -50px;
+   z-index: 0;
+  }
+
+  button{
+    margin-top: 20%;
+    background-color: #A6CDDE;
+    height: 35px;
+    width: 20%;
+    border-radius: 50px;
+  }
+
+  #sectionimg {
+    clip-path: inset(100px 0px 0px 0px);
+    position: fixed;
+    margin-left: 20%;
+    height: 80%;
+    z-index: 1;
+  }
+
+  #logoAire{
+    margin-left: 50%;
+    height: 200px;
+    width: 200px;
+    z-index: 1000;
+  }
+
+
+  app-input-label{
+    margin-bottom: 20px;
+    margin: 100px;
+    background-color: none;
+  }
+
+  #titlel{
+    text-align: right;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    margin-left: 62%;
+    width: 30%;
+    font-size: 35px;
+  }
+
+  #recuperar{
+    cursor: pointer;
+    margin-left: calc(100% - 255px);
+    border-style: groove;
+    border-color: #bbbaba;
+    border-width: 2px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 306px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  #recuperar:active, #recuperar:hover{
+    text-decoration: rgb(99, 211, 219);
+    font-weight: bold;
+  }
+
+  .ilustration-login{
+    width: 600px;
+    position: absolute;
+    z-index: 1000;
+    top: 25%;
+    left: 5%;
+  }
+
+  .login-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .form-container {
+    width: fit-content;
+    position: absolute;
+    right: 15%;
+  }

@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from '../Buttons/button/button.component';
 import { InputLabelComponent } from '../Inputs/input-label/input-label.component';
+import { ServiciosaaComponent } from '../serviciosaa/serviciosaa.component';
+import { TalkProductsComponent } from '../talkproducts/talkproducts.component';
 
 
 
@@ -10,12 +12,16 @@ import { InputLabelComponent } from '../Inputs/input-label/input-label.component
   ],
   exports: [
     ButtonComponent,
-    InputLabelComponent
+    InputLabelComponent,
+    ServiciosaaComponent,
+    TalkProductsComponent
   ],
   imports: [
     CommonModule,
     ButtonComponent,
-    InputLabelComponent
+    InputLabelComponent,
+    ServiciosaaComponent,
+    TalkProductsComponent
   ]
 })
 export class SharedComponentModule { }

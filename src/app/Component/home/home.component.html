@@ -1,0 +1,133 @@
+
+<div id="containerSuper">
+    <div id="navegacion">
+        <nav id="navsearch">
+            <div id="slogan">
+                <img src="..//src/assets/Illustrations/aireacondicionado.png" alt="" id="logocmv" />
+                <p id="nombrenegocio">CVM</p>
+            </div>
+            <div class="buscar">
+                <input type="text" required id="barrabuscar" />
+                <div class="btn">
+                    <img src="..//src/assets/Illustrations/search.svg" id="imgsearch" />
+                    <i class="fas fa-search-dollar"></i>
+                </div>
+            </div>
+        
+            <div class="toggle-btn">
+                <input type="radio" id="btn-tienda" name="toggle-btn" checked>
+                <label for="btn-tienda" id="btnt">Tienda</label>
+                
+                <input type="radio" id="btn-servicios" name="toggle-btn">
+                <label for="btn-servicios" id="btns">Servicios</label>
+              </div>
+            </nav>
+              <nav id="filter">
+                <p id="f">Filtros:</p>
+                <div class="combo_box">
+                    <select>
+                        <option value="opcion1">tiempo de uso</option>
+                        <option value="opcion2">un mes</option>
+                        <option value="opcion3">dos meses</option>
+                        <option value="opcion3">tres meses</option>
+                        <option value="opcion3">cuatro meses</option>
+                        <option value="opcion3">cinco meses</option>
+                        <option value="opcion3">seis meses</option>
+                    </select>
+                </div>
+    
+                <div class="combo_box">
+                    <select>
+                        <option value="opcion1">precio</option>
+                        <option value="opcion2">menor a 1,000,000</option>
+                        <option value="opcion3">menor a 2,000,000</option>
+                        <option value="opcion3">menor a 3,000,000</option>
+                        <option value="opcion3">menor a 4,000,000</option>
+                        <option value="opcion3">menor a 5,000,000</option>
+                        <option value="opcion3">menor a 6,000,000</option>
+                    </select>
+                </div>
+                <div id="separa"></div>
+                <div id="log">
+                    <button id="logIn">crea tu cuenta</button>
+                    <button id="logIn">ingresa</button>
+                </div>
+    
+                <div>
+                    <img src="..//src/assets/Illustrations/download.svg" alt="" id="shop" />
+                </div>
+            </nav>
+    </div>
+    <div id="space"></div>
+        <section  id="comprayventa">
+            <div id="cntlist">
+                <strong>COMPRA-VENTA</strong>
+            <li>Aires Acondicionados Nuevos</li>
+            <li>Tu usado ideal</li>
+            <li>Compramos tu aire acondicionado</li>
+            </div>
+
+            <div> <img src="..//src/assets/Illustrations/homeScreen.png" alt="" id="portadaaire"></div>
+        </section>
+
+        <section id="scrollservices">
+            <app-serviciosaa NombreAccion="Compra" TextoAccion="Aires Acondicionados"></app-serviciosaa>
+            <app-serviciosaa NombreAccion="Solicita" TextoAccion="Nuestros Servicios"></app-serviciosaa>
+            <app-serviciosaa NombreAccion="Compra" TextoAccion="Tu Aire Acondicionado"></app-serviciosaa>
+        </section>
+
+        <div id="news">
+            <p> Nuevo en nuestra tienda </p>
+        </div>
+          <!-- AQUI VIENE LO QUE SON LOS COMPONENTES DE LOS PRODUCTOS Y SERVICIOS -->
+          <section class="seccionPM">
+            <div id="contenido">
+                <aside class="servicios">
+                    <div class="tanda1">
+                        <app-talkproducts NombreAire="NombreAire1" Estado="nuevo" Precio="PrecioVenta"></app-talkproducts>
+                        <app-talkproducts NombreAire="NombreAire1" Estado="nuevo" Precio="PrecioVenta"></app-talkproducts>
+                        <app-talkproducts NombreAire="NombreAire1" Estado="nuevo" Precio="PrecioVenta"></app-talkproducts>
+                        <app-talkproducts NombreAire="NombreAire1" Estado="nuevo" Precio="PrecioVenta"></app-talkproducts>
+                    </div>
+
+                    <div class="tanda2">
+                        <app-talkproducts NombreAire="NombreAire1" Estado="nuevo" Precio="PrecioVenta"></app-talkproducts>
+                        <app-talkproducts NombreAire="NombreAire1" Estado="nuevo" Precio="PrecioVenta"></app-talkproducts>
+                        <app-talkproducts NombreAire="NombreAire1" Estado="nuevo" Precio="PrecioVenta"></app-talkproducts>
+                        <app-talkproducts NombreAire="NombreAire1" Estado="nuevo" Precio="PrecioVenta"></app-talkproducts>
+                    </div>
+
+                    <div class="tanda3">
+                        <section class="more">
+                            <p>y mucho más...</p>
+                        </section>
+                    </div>
+                </aside>
+            </div>
+        </section>
+          <!-- AQUI VIENE LO QUE ES EL FOOTER -->
+          <footer>
+            <div id="relfaq">
+                <p id="p1">Términos y condiciones</p>
+                <p id="p2">Cómo cuidamos tu privacidad</p>
+                <p id="p3">Ayuda / PQR</p>
+            </div>
+
+            <p id="direccion">
+                Copyright 2000-2023 Compra-Venta y Mantenimiento e Aires
+                Acondicionados
+            </p>
+            <p id="direccion">Carrera 25 Número 37 - 26 Piso 2, Lorica-Cordoba, Colombia</p>
+
+            <section class="logosAsociados">
+                <img src="..//src/assets/Illustrations/logoYork.png" alt="aws" id="imgslogo2" />
+
+                <img src="..//src/assets/Illustrations/logoSamsungElectronics.png" alt="aws" id="imgslogo2" />
+
+                <img src="..//src/assets/Illustrations/logoPanasonic.jpg" alt="aws" id="imgslogo2" />
+
+                <img src="..//src/assets/Illustrations/logoLG.png" alt="aws" id="imgslogo2" />
+            </section>
+        </footer>
+    
+</div>

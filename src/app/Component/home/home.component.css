@@ -1,0 +1,297 @@
+#containerSuper {
+  width: 100%;
+  height: 200%;
+}
+
+.seecionPM{
+  margin-left: 260px;
+}
+
+.servicios{
+  margin: 0% 3% 2% 3%;
+}
+
+#navegacion{
+  position: fixed;
+  width: 100%;
+}
+
+#space{ height: 140px; }
+
+#navsearch {
+  width: 100%;
+  height: 85px;
+  background-color: #2d2d2def;
+  border-bottom-style: solid;
+  border-color: #2d2d2d;
+  border-width: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#slogan {
+  display: flex;
+  margin: 0px 250px 0px 0px;
+  align-items: center;
+}
+
+#logocmv {
+  height: 50px;
+  width: 50px;
+}
+
+.buscar {
+  position: absolute;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.buscar input {
+  width: 270px;
+  height: 30px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+}
+
+.btn {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  line-height: 55px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#imgsearch {
+  width: 25px;
+  height: 25px;
+}
+
+.toggle-btn {
+  display: flex;
+  border-radius: 20px;
+  background-color: white;
+  margin-left: 130px;
+  width: 150px;
+  margin-left: 150px;
+}
+
+#btn-tienda[type="radio"],
+#btn-servicios[type="radio"] {
+  display: none;
+}
+
+#btnt,
+#btns {
+  padding: 10px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border-right: none;
+  border-radius: 20px;
+  margin-right: -10px;
+  color: rgb(86, 84, 84);
+}
+
+#btn-tienda[type="radio"]:checked+#btnt,
+#btn-servicios[type="radio"]:checked+#btns {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+}
+
+#nombrenegocio {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/*----- ESTILOS DEL FOOTER -----*/
+#relfaq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#p1,
+#p2,
+#p3 {
+  color: #ffffff;
+  margin: 20px 0px 20px 15px;
+}
+
+#direccion {
+  color: #6c6c6c;
+}
+
+#logosAsociados {
+  display: flex;
+}
+
+#imgslogo2 {
+  height: 40px;
+  width: 200px;
+  margin: 20px 20px 20px 20px;
+  border-radius: 20px;
+}
+
+/*ESTILOS DE A BARRA CON LOS COMBO BOXES Y CARRITO DE COMPRAS*/
+#filter {
+  width: 100%;
+  height: 50px;
+  background-color: #2d2d2def;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#f {
+  color: #ccc;
+  margin: 20px 25px 20px 20px;
+}
+
+.combo_box {
+  position: relative;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.combo_box select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 150px;
+  font-size: 12px;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 20px;
+  height: 25px;
+  text-align: center;
+  background-color: rgba(129, 202, 235, 1);
+}
+
+.combo_box::before {
+  content: "\25BD";
+  position: absolute;
+  display: flex;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+#separa {
+  margin: 0px 70px 0px 70px;
+}
+
+#log {
+  display: flex;
+  height: 35px;
+  width: 200px;
+  color: #ccc;
+}
+
+#logIn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 20px;
+}
+
+#logIn:hover {
+  background-color: #2d2d2d;
+  border-radius: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+#shop {
+  height: 30px;
+  cursor: move;
+}
+
+#shop:hover {
+  background-color: #2d2d2d;
+  border-radius: 5px;
+}
+
+#comprayventa {
+  background-color: #c0c0c0;
+  width: 100%;
+  height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#portadaaire {
+  height: 70%;
+  width: 70%;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+li::before {
+  content: "*";
+}
+
+strong {
+  margin-left: 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #2d2d2def;
+  padding: 20px;
+  text-align: center;
+}
+
+/*ESTILOS DE LOS TRES CUADROS DE SERVICIOS*/
+ #scrollservices {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#news {
+  font-size: 30px;
+  margin-left: 20px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-bottom: 15px;
+}
+
+/*estos son los estilos de los cuadros de productos*/
+.tanda1,
+.tanda2,
+.tanda3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 0% 3% 0%;
+}
+
+.tanda3 {
+  justify-content: center;
+  text-align: center;
+  color: rebeccapurple;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+
