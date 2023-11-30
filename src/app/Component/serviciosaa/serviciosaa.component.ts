@@ -11,5 +11,5 @@ import { CommonModule } from '@angular/common';
 export class ServiciosaaComponent {
   @Input('NombreAccion') NombreAccion?: string;
   @Input('TextoAccion') TextoAccion?: string;
-  @Input('urlImagen') urlImagen?: string;
+  @Input('url') url?: string;
 }

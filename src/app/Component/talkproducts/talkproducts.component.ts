@@ -12,4 +12,5 @@ export class TalkProductsComponent {
   @Input('NombreAire') NombreAire?: string;
   @Input('Estado') Estado?: string;
   @Input('Precio') Precio?: string;
+  @Input('urli') urli?: string;
 }
